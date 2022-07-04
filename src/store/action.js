@@ -16,7 +16,7 @@ export default {
           return response;
         })
         .catch((err) => {
-          return err.message;
+          return err;
         });
       const { data } = responseAuth;
       if (data.message === "ok") {

@@ -43,9 +43,13 @@ export default {
     login() {
       if (this.id.length === 24) {
         this.auth(this.id).then((res) => {
-          const { message } = res;
-          if (message && message === "ok") {
-            this.$router.push({ path: "/analytics" });
+          if (!res.error) {
+            const { message } = res;
+            if (message && message === "ok") {
+              this.$router.push({ path: "/analytics" });
+            }
+          } else {
+            this.error = res.error;
           }
         });
       } else {
