@@ -1,3 +1,5 @@
+Тестовое задание на вакансию Frontend-Разработчик
+
 # lead-hit
 
 ## Project setup
