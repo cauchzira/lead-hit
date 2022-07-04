@@ -1,0 +1,4 @@
+const GET_TOKEN = "GET_TOKEN";
+const GET_CHART_DATA = "GET_CHART_DATA";
+
+export { GET_TOKEN, GET_CHART_DATA };

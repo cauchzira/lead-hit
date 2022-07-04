@@ -1,0 +1,3 @@
+const REQUEST_AUTH = "REQUEST_AUTH";
+
+export { REQUEST_AUTH };
