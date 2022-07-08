@@ -6,7 +6,7 @@ export default {
   [RootActionTypes.REQUEST_AUTH]: async ({ commit, dispatch }, id) => {
     try {
       const responseAuth = await axios
-        .get("https://track-api.leadhit.io/client/test_auth/", {
+        .get(process.env.VUE_APP_API_URL, {
           headers: {
             "Api-Key": "5f8475902b0be670555f1bb3:eEZn8u05G3bzRpdL7RiHCvrYAYo",
             "Leadhit-Site-Id": id,
