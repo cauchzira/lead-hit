@@ -31,7 +31,7 @@ export default {
     } catch (e) {
       window.localStorage.removeItem("leadhit-site-id");
 
-      return { error: "Connection error" };
+      return { error: "ID не существуюет!" };
     }
   },
 };

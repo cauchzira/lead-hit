@@ -33,9 +33,6 @@ export default {
         datasets: [],
       },
       chartOptions: {
-        // animation: {
-        //   duration: 1000,
-        // },
         transitions: {
           show: {
             animation: {
