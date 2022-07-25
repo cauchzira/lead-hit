@@ -2,13 +2,16 @@
   <div id="app">
     <Logout v-if="isLogin" />
     <router-view />
+    <Background />
   </div>
 </template>
 
 <script>
 import Logout from "@/components/Logout/Logout.vue";
+import Background from "@/components/Background/Background";
 export default {
   components: {
+    Background,
     Logout,
   },
   computed: {

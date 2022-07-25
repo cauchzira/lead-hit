@@ -21,17 +21,12 @@
         }}</router-link>
       </div>
     </div>
-    <Background />
   </div>
 </template>
 
 <script>
-import Background from "@/components/Background/Background";
 export default {
   name: "NotFound",
-  components: {
-    Background,
-  },
   computed: {
     isAuth() {
       let token = window.localStorage.getItem("leadhit-site-id");

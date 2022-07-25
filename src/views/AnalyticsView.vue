@@ -4,14 +4,12 @@
       <h1 class="analytics-title">Аналитика</h1>
       <LineChart :chartData="chartData" :chartOptions="chartOptions" />
     </div>
-    <Background />
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 import { GET_CHART_DATA } from "@/store/getter-types";
-import Background from "@/components/Background/Background";
 import LineChart from "@/components/Statistic/LineChart.vue";
 import moment from "moment";
 
@@ -19,7 +17,6 @@ export default {
   name: "AnalyticsView",
   components: {
     LineChart,
-    Background,
   },
   computed: {
     ...mapGetters({

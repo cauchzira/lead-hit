@@ -4,18 +4,15 @@
       <span class="logo-left">Lead</span><span class="logo-right">Hit</span>
     </h1>
     <IdForm />
-    <Background />
   </div>
 </template>
 
 <script>
 import IdForm from "@/components/IdForm/IdForm";
-import Background from "@/components/Background/Background";
 export default {
   name: "HomeView",
   components: {
     IdForm,
-    Background,
   },
 };
 </script>
